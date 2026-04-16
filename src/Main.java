@@ -8,9 +8,12 @@ public class Main{
             nums.add(i);
         }
         nums=Numeros.multiplicador(nums, 5);
-        System.out.println(nums);
+        System.out.println(nums+"\n");
 
         //Ejemplo de uso del filtro selectivo
-        System.out.println(Cadenas.filtroSelectvo('a', 5));
+        System.out.println("Cadenas filtradas\n"+Cadenas.filtroSelectvo('a', 5)+"\n");
+
+        //Ejemplo de uso de conversor de mayusculas
+        System.out.println("Cadenas modificadas\n"+Cadenas.conversorDeMayusculas()+"\n");
     }
 }
