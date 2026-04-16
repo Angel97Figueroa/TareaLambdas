@@ -15,6 +15,6 @@ public class Cadenas {
         ArrayList<String> wordsList=new ArrayList<>();
         Collections.addAll(wordsList, "Diego","Pablo","Gael","Angel","Manuel", "Angel Shiny");
         System.out.println("Cadenas sin modificar\n"+wordsList);
-        return (ArrayList<String>)wordsList.stream().map(cadena->cadena.toUpperCase()).collect(Collectors.toList());
+        return wordsList.stream().map(cadena->cadena.toUpperCase()).collect(Collectors.toCollection(ArrayList<String>::new));
     }
 }
