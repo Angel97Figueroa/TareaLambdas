@@ -15,5 +15,7 @@ public class Main{
 
         //Ejemplo de uso de conversor de mayusculas
         System.out.println("Cadenas modificadas\n"+Cadenas.conversorDeMayusculas()+"\n");
+
+        System.out.println(Numeros.cuadradosUnicos());
     }
 }
