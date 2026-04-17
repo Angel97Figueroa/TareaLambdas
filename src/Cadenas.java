@@ -22,7 +22,9 @@ public class Cadenas {
     public static HashMap<String, Integer> mapaDeLongitudes(){
         ArrayList<String> wordsList=new ArrayList<>();
         Collections.addAll(wordsList, "Diego","Pablo","Gael","Angel","Manuel", "Angel Shiny");
-        System.out.println("Cadenas originales\n"+wordsList);
+        System.out.println("Cadenas originales\n"+wordsList); //ArrayList sin modificar
         return wordsList.stream().collect(Collectors.toMap(w->w,w->w.length(),(viejo, nuevo)->viejo,HashMap::new));
     }
+
+
 }
