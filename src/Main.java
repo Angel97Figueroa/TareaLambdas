@@ -8,12 +8,14 @@ public class Main{
             nums.add(i);
         }
         System.out.println("Numeros originales\n"+nums); //ArrayList sin modificar
-        int n=5; //Factor
-        nums=Numeros.multiplicador(nums, n);
-        System.out.println("Numeros multplicados por un factor de "+n+"\n"+nums+"\n");
+        int factor=5; //Factor
+        nums=Numeros.multiplicador(nums, factor);
+        System.out.println("Numeros multplicados por un factor de "+factor+"\n"+nums+"\n");
 
         //Ejemplo de uso del filtro selectivo
-        System.out.println("Cadenas filtradas\n"+Cadenas.filtroSelectvo('a', 5)+"\n");
+        int longitud=5;
+        char letra='a';
+        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+Cadenas.filtroSelectvo(letra, longitud)+"\n");
 
         //Ejemplo de uso de conversor de mayusculas
         System.out.println("Cadenas convertidas a mayusculas\n"+Cadenas.conversorDeMayusculas()+"\n");
@@ -23,5 +25,8 @@ public class Main{
 
         //Ejemplo del mapa de longitudes
         System.out.println("Mapa de longitudes\n"+Cadenas.mapaDeLongitudes()+"\n");
+
+        //Ejemplo de uso de Modificador de inventarios
+        Numeros.modificadorDeInventario();
     }
 }
