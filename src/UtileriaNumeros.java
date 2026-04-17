@@ -35,4 +35,21 @@ public class UtileriaNumeros {
         inventario.entrySet().stream().filter(elemento->elemento.getValue()!=null && elemento.getKey()!=null).forEach(elemento->System.out.println(elemento.getKey()+" "+elemento.getValue().doubleValue()*0.9));
         System.out.println(" ");
     }
+
+    public static void topeDeFrecuencia(HashMap<String, Integer> mapaDeFrecuencias, int limiteDeFrecuencia){
+        //Si el HashMap es nulo, se termina el metodo
+        if(mapaDeFrecuencias==null){
+            System.out.println("El HashMap enviado es null, no se trabajó con él");
+            return;
+        }
+        mapaDeFrecuencias.replaceAll((palabra, frecuencia)->{
+            if(frecuencia!=null && palabra!=null){
+                frecuencia=frecuencia>=limiteDeFrecuencia ? limiteDeFrecuencia : frecuencia.intValue();
+            }else{
+                return frecuencia;
+            }
+            return frecuencia;
+        });
+        System.out.println("Mapa con tope de frecuencia de "+limiteDeFrecuencia+"\n"+mapaDeFrecuencias);
+    }
 }

@@ -58,21 +58,5 @@ public class UtileriaCadenas {
         return Arrays.stream(frase.split("\\W+")).filter(palabra->palabra!=null).filter(palabra->!palabra.isEmpty()).map(cadena->cadena.toLowerCase()).filter(palabra->palabra.length()>=minimoDeLetras).collect(Collectors.toCollection(HashSet<String>::new));
     }
 
-    public static void topeDeFrecuencia(HashMap<String, Integer> mapaDeFrecuencias, int limiteDeFrecuencia){
-        //Si el HashMap es nulo, se termina el metodo
-        if(mapaDeFrecuencias==null){
-            System.out.println("El HashMap enviado es null, no se trabajó con él");
-            return;
-        }
-        mapaDeFrecuencias.replaceAll((palabra, frecuencia)->{
-            if(frecuencia!=null && palabra!=null){
-                frecuencia=frecuencia>=limiteDeFrecuencia ? limiteDeFrecuencia : frecuencia.intValue();
-            }else{
-                return frecuencia;
-            }
-            return frecuencia;
-        });
-        System.out.println("Mapa con tope de frecuencia de "+limiteDeFrecuencia+"\n"+mapaDeFrecuencias);
-    }
 
 }

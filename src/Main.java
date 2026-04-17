@@ -81,7 +81,7 @@ public class Main{
         HashMap<String, Integer> mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        UtileriaNumeros.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
         System.out.println("\n\n\n\n\n\n");
 
 
@@ -154,7 +154,7 @@ public class Main{
 
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        UtileriaNumeros.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
         System.out.println("\n\n\n\n\n\n");
 
 
@@ -238,7 +238,7 @@ public class Main{
         mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        UtileriaNumeros.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
         System.out.println("\n\n\n\n\n\n");
 
 
@@ -313,7 +313,7 @@ public class Main{
 
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        UtileriaNumeros.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
         System.out.println("\n\n\n\n\n\n");
     }
 }
