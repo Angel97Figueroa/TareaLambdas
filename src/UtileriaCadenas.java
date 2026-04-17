@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class UtileriaCadenas {
@@ -41,6 +38,10 @@ public class UtileriaCadenas {
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias);
         ArrayList<String> palabrasClasificadas=mapaDeFrecuencias.entrySet().stream().filter(elemento->elemento.getValue()>frecuenciaMin).map(e->e.getKey()).collect(Collectors.toCollection(ArrayList<String>::new));
         return palabrasClasificadas;
+    }
+
+    public static HashSet<String> dedupliacionDePalabras(String frase, int minimoDeLetras){
+        return Arrays.stream(frase.split(" ")).filter(palabra->palabra.toLowerCase().length()<minimoDeLetras).collect(Collectors.toCollection(HashSet<String>::new));
     }
 
 }
