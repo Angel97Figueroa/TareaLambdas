@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class UtileriaCadenas {
@@ -33,6 +34,13 @@ public class UtileriaCadenas {
         HashMap<String, Integer> mapaDeFrecuencias=new HashMap<>();
         wordsList.forEach(w->mapaDeFrecuencias.merge(w,1,(viejo, nuevo)->viejo+nuevo));
         return mapaDeFrecuencias;
+    }
+
+    public static ArrayList<String> clasificadorDePalabras(int frecuenciaMin){
+        HashMap<String, Integer> mapaDeFrecuencias=contadorDeFrecuencias();
+        System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias);
+        ArrayList<String> palabrasClasificadas=mapaDeFrecuencias.entrySet().stream().filter(elemento->elemento.getValue()>frecuenciaMin).map(e->e.getKey()).collect(Collectors.toCollection(ArrayList<String>::new));
+        return palabrasClasificadas;
     }
 
 }

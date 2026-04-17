@@ -9,7 +9,7 @@ public class Main{
         }
         System.out.println("Numeros originales\n"+nums); //ArrayList sin modificar
         int factor=5; //Factor
-        nums= UtileriaNumeros.multiplicador(nums, factor);
+        nums=UtileriaNumeros.multiplicador(nums, factor);
         System.out.println("Numeros multplicados por un factor de "+factor+"\n"+nums+"\n");
 
         //Ejemplo de uso del filtro selectivo
@@ -31,5 +31,9 @@ public class Main{
 
         //EJemplo de uso de contador de frecuencias
         System.out.println("Mapa de frecuencias\n"+UtileriaCadenas.contadorDeFrecuencias()+"\n");
+
+        //Ejemplo de uso de clasificador de palabras
+        int frecuenciaMin=2;
+        System.out.println("Mapa con palabras que se repiten mas de "+frecuenciaMin+" veces\n"+UtileriaCadenas.clasificadorDePalabras(frecuenciaMin)+"\n");
     }
 }
