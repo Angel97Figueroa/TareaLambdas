@@ -70,8 +70,8 @@ public class Main{
         System.out.println("Mapa con palabras que se repiten mas de "+frecuenciaMin+" veces\n"+UtileriaCadenas.clasificadorDePalabras(frecuenciaMin, mapaDeFrecuencias)+"\n");
 
         //Ejemplo de uso de deduplicacion de palabras
-        String frase="¡Hola!, esta es mi fabulosa tarea hecha en Java es";
-        int letrasMinimas=5;
+        String frase="¡Hola!, esta es mi fabulosa tarea hecha en Java Es";
+        int letrasMinimas=2;
         System.out.println("Frase original\n"+frase);
         System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
 
@@ -81,7 +81,8 @@ public class Main{
         HashMap<String, Integer> mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        System.out.println("Mapa con tope de frecuencia de "+limiteDeFrecuencia+"\n"+UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia)+"\n\n\n\n\n\n");
+        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        System.out.println("\n\n\n\n\n\n");
 
 
 
@@ -153,7 +154,8 @@ public class Main{
 
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        System.out.println("Mapa con tope de frecuencia de "+limiteDeFrecuencia+"\n"+UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia)+"\n\n\n\n\n\n");
+        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        System.out.println("\n\n\n\n\n\n");
 
 
 
@@ -236,7 +238,8 @@ public class Main{
         mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
-        System.out.println("Mapa con tope de frecuencia de "+limiteDeFrecuencia+"\n"+UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia)+"\n\n\n\n\n\n");
+        UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
+        System.out.println("\n\n\n\n\n\n");
 
     }
 }
