@@ -72,5 +72,13 @@ public class Main{
         int letrasMinimas=5;
         System.out.println("Frase original\n"+frase);
         System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+
+        int limiteDeFrecuencia=3;
+        ArrayList<String> wordsList6=new ArrayList<>();
+        Collections.addAll(wordsList6, "Diego","Pablo","Gael","Angel","Manuel","Angel","Diego","Diego","Pablo","Pablo","Pablo");
+        HashMap<String, Integer> mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
+        System.out.println("Cadenas originales\n"+wordsList6);
+        System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
+        System.out.println("Mapa con tope de frecuencia de "+limiteDeFrecuencia+"\n"+UtileriaCadenas.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia));
     }
 }

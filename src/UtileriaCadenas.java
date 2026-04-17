@@ -30,4 +30,9 @@ public class UtileriaCadenas {
         return Arrays.stream(frase.split(" ")).filter(palabra->palabra.toLowerCase().length()<minimoDeLetras).collect(Collectors.toCollection(HashSet<String>::new));
     }
 
+    public static HashMap<String, Integer> topeDeFrecuencia(HashMap<String, Integer> mapaDeFrecuencias, int limiteDeFrecuencia){
+        mapaDeFrecuencias.replaceAll((palabra, frecuencia)->frecuencia>=limiteDeFrecuencia ? limiteDeFrecuencia : frecuencia);
+        return mapaDeFrecuencias;
+    }
+
 }
