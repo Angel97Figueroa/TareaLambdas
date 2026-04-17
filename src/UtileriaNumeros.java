@@ -27,5 +27,6 @@ public class UtileriaNumeros {
         System.out.println("Mapa original\n"+inventario); //HashMap sin modificar
         System.out.println("Mapa con el descuento aplicado");
         inventario.forEach((producto, precio)->System.out.println(producto+" "+precio.doubleValue()*0.9));
+        System.out.println(" ");
     }
 }
