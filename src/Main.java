@@ -28,5 +28,8 @@ public class Main{
 
         //Ejemplo de uso de Modificador de inventarios
         UtileriaNumeros.modificadorDeInventario();
+
+        //EJemplo de uso de contador de frecuencias
+        System.out.println("Mapa de frecuencias\n"+UtileriaCadenas.contadorDeFrecuencias()+"\n");
     }
 }
