@@ -9,24 +9,24 @@ public class Main{
         }
         System.out.println("Numeros originales\n"+nums); //ArrayList sin modificar
         int factor=5; //Factor
-        nums=Numeros.multiplicador(nums, factor);
+        nums= UtileriaNumeros.multiplicador(nums, factor);
         System.out.println("Numeros multplicados por un factor de "+factor+"\n"+nums+"\n");
 
         //Ejemplo de uso del filtro selectivo
         int longitud=5;
         char letra='a';
-        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+Cadenas.filtroSelectvo(letra, longitud)+"\n");
+        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectvo(letra, longitud)+"\n");
 
         //Ejemplo de uso de conversor de mayusculas
-        System.out.println("Cadenas convertidas a mayusculas\n"+Cadenas.conversorDeMayusculas()+"\n");
+        System.out.println("Cadenas convertidas a mayusculas\n"+ UtileriaCadenas.conversorDeMayusculas()+"\n");
 
         //Ejemplo del cuadradados unicos
-        System.out.println("Numeros unicos elevados al cuadrado\n"+Numeros.cuadradosUnicos()+"\n");
+        System.out.println("Numeros unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos()+"\n");
 
         //Ejemplo del mapa de longitudes
-        System.out.println("Mapa de longitudes\n"+Cadenas.mapaDeLongitudes()+"\n");
+        System.out.println("Mapa de longitudes\n"+ UtileriaCadenas.mapaDeLongitudes()+"\n");
 
         //Ejemplo de uso de Modificador de inventarios
-        Numeros.modificadorDeInventario();
+        UtileriaNumeros.modificadorDeInventario();
     }
 }
