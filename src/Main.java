@@ -32,6 +32,7 @@ public class Main{
         //EJemplo de uso de contador de frecuencias
         System.out.println("Mapa de frecuencias\n"+UtileriaCadenas.contadorDeFrecuencias()+"\n");
 
+        //Ejemplo de uso de clasificador de palabras
         int frecuenciaMin=2;
         System.out.println("Mapa con palabras que se repiten mas de "+frecuenciaMin+" veces\n"+UtileriaCadenas.clasificadorDePalabras(frecuenciaMin)+"\n");
     }
