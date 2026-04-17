@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
-public class Cadenas {
+public class UtileriaCadenas {
     public static ArrayList<String> filtroSelectvo(char letraProhibida, int longitudMin){
         ArrayList<String> wordsList=new ArrayList<>();
         Collections.addAll(wordsList, "Diego","Pablo","Gael","Angel","Manuel", "Angel Shiny");
