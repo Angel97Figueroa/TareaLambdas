@@ -35,5 +35,11 @@ public class Main{
         //Ejemplo de uso de clasificador de palabras
         int frecuenciaMin=2;
         System.out.println("Mapa con palabras que se repiten mas de "+frecuenciaMin+" veces\n"+UtileriaCadenas.clasificadorDePalabras(frecuenciaMin)+"\n");
+
+        //Ejemplo de uso de deduplicacion de palabras
+        String frase="Hola esta es mi fabulosa tarea hecha en Java es";
+        int letrasMinimas=5;
+        System.out.println("Frase original\n"+frase);
+        System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
     }
 }
