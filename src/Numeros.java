@@ -14,6 +14,7 @@ public class Numeros {
         Collections.addAll(listaNums, 1,1,2,3,5,8,13,21,34,55);
 
         HashSet<Integer> listaNumsUnicos=(HashSet<Integer>)listaNums.stream().filter(num->num%2==0).map(num->num*num).collect(Collectors.toSet());
+        System.out.println("Numeros originales\n"+listaNums); //ArrayList sin modificar
         return listaNumsUnicos;
     }
 }
