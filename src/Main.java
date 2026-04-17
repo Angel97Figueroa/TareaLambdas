@@ -21,5 +21,7 @@ public class Main{
         //Ejemplo del cuadradados unicos
         System.out.println("Numeros unicos elevados al cuadrado\n"+Numeros.cuadradosUnicos()+"\n");
 
+        //Ejemplo del mapa de longitudes
+        System.out.println("Mapa de longitudes\n"+Cadenas.mapaDeLongitudes()+"\n");
     }
 }
