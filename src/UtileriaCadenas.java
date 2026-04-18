@@ -50,7 +50,7 @@ public class UtileriaCadenas {
         return palabrasClasificadas;
     }
 
-    public static HashSet<String> dedupliacionDePalabras(String frase, int minimoDeLetras){
+    public static HashSet<String> deduplicacionDePalabras(String frase, int minimoDeLetras){
         //Si la frase es nula, se termina el metodo regresando un HashSet
         if(frase==null){
             return new HashSet<>();

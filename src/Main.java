@@ -73,7 +73,7 @@ public class Main{
         String frase="¡Hola!, esta es mi fabulosa tarea hecha en Java Es";
         int letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.deduplicacionDePalabras(frase, letrasMinimas)+"\n");
 
         int limiteDeFrecuencia=3;
         ArrayList<String> wordsList6=new ArrayList<>();
@@ -146,7 +146,7 @@ public class Main{
         frase="";
         letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.deduplicacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
         wordsList6=new ArrayList<>();
@@ -231,7 +231,7 @@ public class Main{
         frase=null;
         letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.deduplicacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
         mapaDeFrecuencias0=new HashMap<>();
@@ -306,7 +306,7 @@ public class Main{
         frase=null;
         letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.deduplicacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
         mapaDeFrecuencias0=null;
