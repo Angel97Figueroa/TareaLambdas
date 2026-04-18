@@ -275,6 +275,7 @@ public class Main{
         //Ejemplo del cuadradados unicos
         listaNums=null;
 
+        System.out.println("Numeros originales\n"+listaNums);
         System.out.println("Numeros pares unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
 
         //Ejemplo del mapa de longitudes
