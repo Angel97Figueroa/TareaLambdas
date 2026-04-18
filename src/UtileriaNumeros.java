@@ -27,7 +27,7 @@ public class UtileriaNumeros {
     public static void modificadorDeInventario(HashMap<String, Double> inventario){
         //Si el HashMap es nulo, se termina el metodo
         if(inventario==null){
-            System.out.println("El HashMap enviado es null, no se trabajó con él");
+            System.out.println("El HashMap enviado es null, no se trabajó con él\n");
             return;
         }
 
