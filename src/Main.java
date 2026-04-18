@@ -306,7 +306,7 @@ public class Main{
         frase=null;
         letrasMinimas=5;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
         mapaDeFrecuencias0=null;
