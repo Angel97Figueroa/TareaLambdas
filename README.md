@@ -10,6 +10,7 @@ Recibe de parametros la letra prohibida, Longitud mínima, y un ArrayList.
 Retorna un ArrayList con las palabras filtradas.
 
 **Ejemplo de uso**
+
 Entrada: char 'a', int 4, ArrayList ["Avión", "Bote", "Sol", "Gato"].
 Retorno: ArrayList ["Bote", "Gato"] 
 Omitió "Avión" por la letra y "Sol" por la longitud.
