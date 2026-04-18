@@ -44,7 +44,7 @@ Recibe de parametros un número entero el cual es el umbral, y un HashMap el cua
 Retorna un ArrayList con las palabras que pasaron ese umbral.
 
 **Ejemplo de uso**
-Entrada: int 1, HashMap {"Gato": 2, "Perro": 1}.
+Entrada: int 1, HashMap {"Gato"=2, "Perro"=1}.
 Retorno: ArrayList ["Gato"].
 
 ### 6.- **`dedupliacionDePalabras`:** Procesa una frase, elimina signos de puntuación y devuelve un conjunto de palabras únicas en minúsculas que tengan una longitud mayor a cierto umbral.
