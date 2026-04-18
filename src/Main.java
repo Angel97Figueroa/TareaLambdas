@@ -23,7 +23,7 @@ public class Main{
         Collections.addAll(wordsList1, "Diego","Pablo","Gael","Angel","Manuel", "Angel Shiny");
 
         System.out.println("Cadenas originales\n"+wordsList1); //ArrayList sin modificar
-        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectvo(letra, longitud, wordsList1)+"\n");
+        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectivo(letra, longitud, wordsList1)+"\n");
 
         //Ejemplo de uso de conversor de mayusculas
         ArrayList<String> wordsList2=new ArrayList<>();
@@ -71,9 +71,9 @@ public class Main{
 
         //Ejemplo de uso de deduplicacion de palabras
         String frase="¡Hola!, esta es mi fabulosa tarea hecha en Java Es";
-        int letrasMinimas=2;
+        int letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
 
         int limiteDeFrecuencia=3;
         ArrayList<String> wordsList6=new ArrayList<>();
@@ -103,7 +103,7 @@ public class Main{
         wordsList1=new ArrayList<>();
 
         System.out.println("Cadenas originales\n"+wordsList1); //ArrayList sin modificar
-        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectvo(letra, longitud, wordsList1)+"\n");
+        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectivo(letra, longitud, wordsList1)+"\n");
 
         //Ejemplo de uso de conversor de mayusculas
         wordsList2=new ArrayList<>();
@@ -144,9 +144,9 @@ public class Main{
 
         //Ejemplo de uso de deduplicacion de palabras
         frase="";
-        letrasMinimas=5;
+        letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
         wordsList6=new ArrayList<>();
@@ -180,7 +180,7 @@ public class Main{
         Collections.addAll(wordsList1, null,null,null,null,null,null);
 
         System.out.println("Cadenas originales\n"+wordsList1); //ArrayList sin modificar
-        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectvo(letra, longitud, wordsList1)+"\n");
+        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectivo(letra, longitud, wordsList1)+"\n");
 
         //Ejemplo de uso de conversor de mayusculas
         wordsList2=new ArrayList<>();
@@ -219,23 +219,25 @@ public class Main{
 
         //Ejemplo de uso de clasificador de palabras
         frecuenciaMin=2;
-        wordsList5=new ArrayList<>();
-        Collections.addAll(wordsList5, null,null,null,null,null,null);
-        mapaDeFrecuencias=UtileriaCadenas.contadorDeFrecuencias(wordsList5);
-        System.out.println("Cadenas originales\n"+wordsList5);
+        mapaDeFrecuencias=new HashMap<>();
+        mapaDeFrecuencias.put(null, null);
+        mapaDeFrecuencias.put(null, null);
+        mapaDeFrecuencias.put(null, null);
+
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias);
         System.out.println("Mapa con palabras que se repiten mas de "+frecuenciaMin+" veces\n"+UtileriaCadenas.clasificadorDePalabras(frecuenciaMin, mapaDeFrecuencias)+"\n");
 
         //Ejemplo de uso de deduplicacion de palabras
         frase=null;
-        letrasMinimas=5;
+        letrasMinimas=4;
         System.out.println("Frase original\n"+frase);
-        System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
+        System.out.println("HashSet con las palabras con una cantidad de letras mayor o igual a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
-        wordsList6=new ArrayList<>();
-        Collections.addAll(wordsList6, null,null,null,null,null,null);
-        mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
+        mapaDeFrecuencias0=new HashMap<>();
+        mapaDeFrecuencias0.put(null, null);
+        mapaDeFrecuencias0.put(null, null);
+        mapaDeFrecuencias0.put(null, null);
         System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
         UtileriaNumeros.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
@@ -262,7 +264,7 @@ public class Main{
         wordsList1=null;
 
         System.out.println("Cadenas originales\n"+wordsList1); //ArrayList sin modificar
-        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectvo(letra, longitud, wordsList1)+"\n");
+        System.out.println("Cadenas filtradas con letra prohibida "+letra+" y longitud minima de "+longitud+"\n"+ UtileriaCadenas.filtroSelectivo(letra, longitud, wordsList1)+"\n");
 
         //Ejemplo de uso de conversor de mayusculas
         wordsList2=null;
@@ -294,10 +296,8 @@ public class Main{
 
         //Ejemplo de uso de clasificador de palabras
         frecuenciaMin=2;
-        wordsList5=null;
-        mapaDeFrecuencias=UtileriaCadenas.contadorDeFrecuencias(wordsList5);
+        mapaDeFrecuencias=null;
 
-        System.out.println("Cadenas originales\n"+wordsList5);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias);
         System.out.println("Mapa con palabras que se repiten mas de "+frecuenciaMin+" veces\n"+UtileriaCadenas.clasificadorDePalabras(frecuenciaMin, mapaDeFrecuencias)+"\n");
 
@@ -308,12 +308,9 @@ public class Main{
         System.out.println("HashSet con las palabras con una cantidad de letras menor a "+letrasMinimas+" \n"+UtileriaCadenas.dedupliacionDePalabras(frase, letrasMinimas)+"\n");
 
         limiteDeFrecuencia=3;
-        wordsList6=null;
-        mapaDeFrecuencias0=UtileriaCadenas.contadorDeFrecuencias(wordsList6);
+        mapaDeFrecuencias0=null;
 
-        System.out.println("Cadenas originales\n"+wordsList6);
         System.out.println("Mapa de frecuencias original\n"+mapaDeFrecuencias0);
         UtileriaNumeros.topeDeFrecuencia(mapaDeFrecuencias0, limiteDeFrecuencia);
-        System.out.println("\n\n\n\n\n\n");
     }
 }

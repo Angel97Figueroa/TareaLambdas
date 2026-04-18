@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class UtileriaCadenas {
-    public static ArrayList<String> filtroSelectvo(char letraProhibida, int longitudMin, ArrayList<String> wordsList){
+    public static ArrayList<String> filtroSelectivo(char letraProhibida, int longitudMin, ArrayList<String> wordsList){
         //Si el ArrayList es nulo, se termina el metodo regresando un ArrayList vacio
         if(wordsList==null){
             return new ArrayList<>();
