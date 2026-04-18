@@ -36,7 +36,7 @@ public class Main{
         ArrayList<Integer> listaNums=new ArrayList<>();
         Collections.addAll(listaNums, 1,1,2,3,5,8,13,21,34,55);
 
-        System.out.println("Numeros unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
+        System.out.println("Numeros pares unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
 
         //Ejemplo del mapa de longitudes
         ArrayList<String> wordsList3=new ArrayList<>();
@@ -114,7 +114,7 @@ public class Main{
         //Ejemplo del cuadradados unicos
         listaNums=new ArrayList<>();
 
-        System.out.println("Numeros unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
+        System.out.println("Numeros pares unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
 
         //Ejemplo del mapa de longitudes
         wordsList3=new ArrayList<>();
@@ -193,7 +193,7 @@ public class Main{
         listaNums=new ArrayList<>();
         Collections.addAll(listaNums, null,null,null,null,null,null);
 
-        System.out.println("Numeros unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
+        System.out.println("Numeros pares unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
 
         //Ejemplo del mapa de longitudes
         wordsList3=new ArrayList<>();
@@ -275,7 +275,7 @@ public class Main{
         //Ejemplo del cuadradados unicos
         listaNums=null;
 
-        System.out.println("Numeros unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
+        System.out.println("Numeros pares unicos elevados al cuadrado\n"+ UtileriaNumeros.cuadradosUnicos(listaNums)+"\n");
 
         //Ejemplo del mapa de longitudes
         wordsList3=null;
