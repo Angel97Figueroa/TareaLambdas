@@ -172,3 +172,5 @@ java Main
 ```
 
 La clase Main solamente es para comprobar el correcto funcionamiento de los metodos enlistados anteriormente.
+
+Se recomienda utilizar java 21 o superior.
