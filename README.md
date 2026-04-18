@@ -173,7 +173,7 @@ java Main
 
 La clase Main solamente es para comprobar el correcto funcionamiento de los metodos enlistados anteriormente.
 
-##Autor
+## Autor
 **Angel Rene Figueroa Herrera**
 
-**Nota:**Se recomienda utilizar java 21 o superior.
+**Nota:** Se recomienda utilizar java 21 o superior.
