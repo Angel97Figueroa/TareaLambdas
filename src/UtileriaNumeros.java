@@ -9,6 +9,7 @@ public class UtileriaNumeros {
         }
 
         listaNums.removeIf(n->n==null); //Se quitan los valores nulos del ArrayList
+        //Utiliza replaceAll para reemplazar cada elemento de la lista original por su resultado de la multiplicacion del elemento por el factor
         listaNums.replaceAll(num->num.intValue()*factor);
         return listaNums;
     }
@@ -19,6 +20,7 @@ public class UtileriaNumeros {
             return new HashSet<>();
         }
 
+        //Filtra nulos, selecciona pares, eleva al cuadrado y recolecta en un Set para eliminar duplicados
         HashSet<Integer> listaNumsUnicos=(HashSet<Integer>)listaNums.stream().filter(n->n!=null).filter(num->num%2==0).map(num->num*num).collect(Collectors.toSet());
         System.out.println("Numeros originales\n"+listaNums); //ArrayList sin modificar
         return listaNumsUnicos;
@@ -32,6 +34,7 @@ public class UtileriaNumeros {
         }
 
         System.out.println("Mapa con el descuento aplicado");
+        //Filtra entradas nulas y proyecta en consola el nombre del producto junto al precio con el 10% de descuento
         inventario.entrySet().stream().filter(elemento->elemento.getValue()!=null && elemento.getKey()!=null).forEach(elemento->System.out.println(elemento.getKey()+" "+elemento.getValue().doubleValue()*0.9));
         System.out.println(" ");
     }
@@ -42,6 +45,7 @@ public class UtileriaNumeros {
             System.out.println("El HashMap enviado es null, no se trabajó con él");
             return;
         }
+        //Recorre el mapa, ignora los nulos, y aplica una condicion ternaria para asegurar que ninguna frecuencia supere el limite establecido
         mapaDeFrecuencias.replaceAll((palabra, frecuencia)->{
             if(frecuencia!=null && palabra!=null){
                 frecuencia=frecuencia>=limiteDeFrecuencia ? limiteDeFrecuencia : frecuencia.intValue();

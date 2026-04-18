@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.HashMap;
 
 public class Main{
-    public static void main(){
+    public static void main(String[] args){
         //Ejemplo del mulplicador
         ArrayList<Integer> nums=new ArrayList<>();
         for(int i=1;i<=5;i++){
