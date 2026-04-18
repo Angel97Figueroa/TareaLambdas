@@ -17,9 +17,11 @@ Omitió "Avión" por la letra y "Sol" por la longitud.
 
 ### 2.- **`conversorDeMayusculas`:** Transforma una lista de cadenas a mayúsculas omitiendo valores nulos.
 Recibe de parametro el ArrayList con las palabras.
+
 Retorna un ArrayList con las mismas palabras pero en mayusculas.
 
 **Ejemplo de uso**
+
 Entrada: ArrayList ["hola", "mundo", null].
 Retorno: ArrayList ["HOLA", "MUNDO"].
 Se quitó null porque esta preparado para limpiar los null de la lista.
